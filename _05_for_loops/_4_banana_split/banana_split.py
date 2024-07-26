@@ -25,5 +25,13 @@ canvas.create_text(100, 50, text="text goes here", font=("Arial", 16))
 '''
 # Put your code below
 
+for i in range (4):
+    if i <= 2:
+        word = "ice cream"
+    if i > 2:
+        word = "banana"
+
+    canvas.create_text(100, 60 + 22*i, text=word, font=("Arial", 20))
+
 
 root.mainloop()
